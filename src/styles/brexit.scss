@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto+Slab:700|Roboto:400,500,700|Montserrat:400,500,600,700,800&subset=latin-ext");
 $momentum-lila-dark: #8E6FCE;
 $momentum-lila-light: #d9ceee;
+$momentum-lila-superlight: #f4e1fc;
+
+$light-gray: #eee;
+
 
 html, body {
+  background-color: $light-gray;
   font-family: "Montserrat", sans-serif;
   font-size: 16px; }
 
@@ -36,11 +41,11 @@ hr {
 a {
   text-decoration: none;
   color: $momentum-lila-dark;
-  font-weight: 700; }
-
-a:hover {
-  color: $momentum-lila-light;
-  text-decoration: none; }
+  font-weight: 700;
+  &:hover {
+    color: $momentum-lila-light;
+    text-decoration: none; }
+}
 
 ul {
   list-style-type: square;
@@ -53,10 +58,44 @@ label {
   color: red;
 }
 
+#header {
+    padding-top: 0px;
+    margin-top: 0px;
+    background-image: url("https://ichef.bbci.co.uk/news/800/cpsprodpb/3D2E/production/_108826651_mediaitem93918251.jpg");
+    background-color: $light-gray;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    width: auto;
+    height: 500px;
+    h1 {
+        color: white;
+        font-size: 42px;
+    }
+}
+
+.panel-heading {
+  background: white;
+  color: $momentum-lila-dark;
+  font-weight: bold;
+  &:hover {
+    color: $momentum-lila-light;
+    cursor: pointer;
+  }
+}
+.panel-details {
+  background: #f0f0f0; }
+
 .indent {
   margin-left: "100px";
 }
 
+.navbar {
+  margin-bottom: 0;
+}
 .nav-link {
   color: $momentum-lila-dark !important;
   font-weight: bold;
@@ -69,16 +108,17 @@ label {
   font-weight: 400;
 }
 
-.main {
-  padding: 0 20px;
+.main-info-container {
+  background-color: white;
+  padding-top: 20px;
+  margin-bottom: 0 !important;
+  text-align: left;
+
+  p {
+    text-align: justify !important;
+  }
 }
 
-.main-info-container {
-  text-align: left;
-}
-.main-info-container p {
-  text-align: justify !important;
-}
 .text-center {
   text-align: center;
 }

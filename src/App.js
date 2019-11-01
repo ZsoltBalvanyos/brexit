@@ -36,6 +36,12 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
 
+      <Container fluid id="header" >
+        <Row width="100%">
+
+        </Row>
+      </Container>
+
       <Main />
 
       <Container fluid>

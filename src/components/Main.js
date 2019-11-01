@@ -1,8 +1,11 @@
 import React from 'react';
-import { Form, Container } from 'react-bootstrap';
+import { Form, Container, Card, Accordion } from 'react-bootstrap';
+import ChecklistItem from './ChecklistItem.js';
+
+let counter = 0;
 
 const Main = () => (
-  <Container xs={12} sm={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }} className="main-info-container">
+  <Container xs={12} sm={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }} className="main-info-container shadow p-3 mb-5 bg-white rounded">
 
     <h5>
       Az Egyesült Királyságban dolgozol magyar munkavállóként? Ha igen, akkor érdemes a Brexit folyamat alapjait megérteni, és tisztában lenni azzal, hogy mi várható, illetve mit tehetsz, hogy ne érjenek nagy meglepetések a következő hetekben/hónapokban. Mi összegyűjtöttük a legfontosabb tudnivalókat ezen az oldalon.
@@ -44,7 +47,7 @@ const Main = () => (
       Tehát sok a bizonytalanság, azonban tehetsz néhány dolgot, hogy felkészülj. Az alábbi kérdések megválaszolásával felmérheted, hogy mennyire állsz készen az ország EU-ból való bármilyen formájú kilépésére.
     </p>
 
-      <ul>
+      <Accordion>
         {[
           'Van érvényes útleveled?',
           'Brit állampolgár vagy? Ha nem, jelentkeztél már pre-settled vagy settled statusra?',
@@ -54,8 +57,11 @@ const Main = () => (
           'Utánanéztél változnak-e a mobilszolgáltatód roamin díjai?',
           'Ha vannak, honosítottad a szakmai okleveleidet?',
           'Utánanéztél, hogy lehte angol kocsival az EU-ba utazni Brexit után?'
-        ].map(label => (<li id="checklist">{label}</li>))}
-      </ul>
+        ].map(label => {
+          counter = counter + 1;
+          return <ChecklistItem index={counter} header={label} text="bfajsirfjsuhfs" />
+        })}
+      </Accordion>
 
     <h3>Uniós polgárok letelepedési rendszere</h3>
     <h4>Settled status és pre-settled status</h4>
