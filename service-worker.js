@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/brexit/precache-manifest.5c30be8c523a07d991d5f35b05461c4a.js"
+  "/brexit/precache-manifest.884375e6afc5ea4024bec6d326f9d211.js"
 );
 
 self.addEventListener('message', (event) => {
