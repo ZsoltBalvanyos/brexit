@@ -58,7 +58,7 @@ const Main = () => (
       </ul>
 
     <h3>Uniós polgárok letelepedési rendszere</h3>
-    <h4>(„Settled Status” és „pre-settled status”)</h4>
+    <h4>Settled status és pre-settled status</h4>
     <hr />
     <p>
       Az Egyesült Királyságban élő uniós állampolgároknak , így a magyaroknak is jelentkeznük kell „settled” vagy „pre-settled status”-ért. Ezt akkor is meg kell szerezned ha UK megegyezés nélkül lép ki az EU-ból (no-deal Brexit). Az Egyesült Királyságban való tartózkodást rendező státuszt elvileg minden itt élő uniós polgár meg fogja kapni függetlenül attól, hogy miért, milyen jogcímen van az országban. (Az országban való tartózkodást vizsgálják, nem azt, hogy valaki tanult, dolgozott, vagy pl. munkanélküli segélyen élt.) A jelentkezés ingyenes és okostelefonora letölthető alkalmazással lehet elintézni 2021. június 30-ig vagy (no-deal Brexit esetén) 2020. december 31-ig.
