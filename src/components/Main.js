@@ -35,10 +35,10 @@ const Main = () => (
     <h3>Akkor mi várható?</h3>
     <hr />
     <p>
-      Boris Johnson miniszterelnök kormánya és az EU megállapodott egy új egyezményben az elmúlt hetekben, amit a brit parlament ugyan nagy vonalakban elfogadott, de több időt kértek, hogy azt részleteiben is meg tudják vitatni. Így a parlament által erre kötelezett brit kormány az október 31.-i határidő meghosszabbítását kérte az EU-tól. Elemzők szerint az Unió ezt támogatni fogja, kérdés azonban, hogy a Boris Johnson által kért január 31. lesz az új határidő, vagy pedig egy jelentősen rövidebb hosszabbítás következik.
+      Boris Johnson miniszterelnök kormánya és az EU megállapodott egy új egyezményben az elmúlt hetekben, amit a brit parlament ugyan nagy vonalakban elfogadott, de több időt kértek, hogy azt részleteiben is meg tudják vitatni. Így a parlament által erre kötelezett brit kormány az október 31-i határidő meghosszabbítását kérte az EU-tól, amit az európai tagállamok vétó nélkül elfogadtak, és január 31-ét tűzték ki új hivatalos kilépési határidőként.
     </p>
     <p>
-      A kormány közben már egy decemberi előrehozott választás lehetőségét is meglebegtette, ugyanis ha a parlamenti helyek elosztásán akár csak egy kicsit is változtatni lehetne a kormány javára, akkor könnyebben és gyorsabban el lehetne fogadni a jelenlegi megállapodást és megvalósulna a Brexit. Előrehozott választások megtartásához azonban kétharmados többség kell parlamentben, ezért ez ellenzék támogatására is szükség van.
+      A miniszterelnök látva hogy a Brexit megállapodást nem tudja gyorsan és gördülékenyen törvénybe iktatni, stratégiát váltott, és előrehozott választások ötletét terjesztette a parlament elé. A kormány logikájában, ha a parlamenti helyek elosztásán akár csak egy kicsit is változtatni lehetne a javukra, akkor könnyebben és gyorsabban el lehetne fogadni a jelenlegi megállapodást és megvalósulna a Brexit. A parlament elfogadta a kormány indítványát, így a britek december 12-én általános népszavazáson döntenek majd a képviselői helyek sorsáról. Abban nagyjából mindenki egyetért hogy a parlamenti helyek újraelosztása potenciálisan elmozdíthatja a már többszörösen is holtpontra jutott kilépési folyamatot valamilyen irányba.
     </p>
 
     <h3>Checklist</h3>
@@ -49,17 +49,21 @@ const Main = () => (
 
       <Accordion>
         {[
-          'Van érvényes útleveled?',
-          'Brit állampolgár vagy? Ha nem, jelentkeztél már pre-settled vagy settled statusra?',
-          'Van "National Insurance Number"-ed?',
-          'Utánanéztél változik-e az Erasmus ösztöndíjad?',
-          'Be vagy jelentve a munkahelyeden?',
-          'Utánanéztél változnak-e a mobilszolgáltatód roamin díjai?',
-          'Ha vannak, honosítottad a szakmai okleveleidet?',
-          'Utánanéztél, hogy lehte angol kocsival az EU-ba utazni Brexit után?'
-        ].map(label => {
+          {header:'Van érvényes útleveled?', text:'A londoni nagykövettségen tudsz igényelni. Ide kattintva tudsz időpontot foglalni, részletesebb tájékoztatásért kattints ide!'},
+          {header:'Brit állampolgár vagy? Ha nem, jelentkeztél már pre-settled vagy settled statusra?', text:'Jelentkezéshez szükséged lesz egy érvényes e-mail címre, telefonszámra, személyigazolványra vagy útlevélre. A jelentkezést intézheted egyszerűen az ingyenesen letölthető ‘EU Exit: Document Check’  telefonos applikáción keresztül, postai úton illetve egy erre a célra kijelölt regisztrációs intézmények egyikének felkeresésével. A kormány magyar nyelvű tájékoztatásáért kattints ide, a jelentkezés elindításához pedig ide!'},
+          {header:'Van "National Insurance Number"-ed?', text:'National Insurance Number igényléséhez kattints ide!'},
+          {header:'Utánanéztél változik-e az Erasmus ösztöndíjad?', text:<div>Az Európai Unió hivatalos oldalán olvashatsz erről bővebben magyarul.</div>},
+          {header:'Be vagy jelentve a munkahelyeden?', text:''},
+          {header:'Utánanéztél változnak-e a mobilszolgáltatód roamin díjai?', text:'Egyelőre az EE hivatalos álláspontja, hogy nem terveznek változtatni a jelenlegi rendszerükön. Az O2 sem dolgozott ki külön tervet, de elmondásuk szerint a lehető legkedvezőbb megoldást szeretnék kínálni az ügyfeleiknek, részletes információért keresd fel a szolgáltatód ügyfélszolgálatát.'},
+          {header:'Ha vannak, honosítottad a szakmai okleveleidet?',
+            text:<div>A kormányoldalon tudsz ehhez segítséget kérni. Illetve vannak erre szakosodott weboldalak:	<br/><br/>
+            <a target="_blank" href="https://document-translations.co.uk/languages-translations/hungarian-translation-london">https://document-translations.co.uk/languages-translations/hungarian-translation-london</a><br/><br/>
+            <a target="_blank" href="https://www.londontranslations.co.uk/hungarian-translation/">https://www.londontranslations.co.uk/hungarian-translation/</a>
+            </div>},
+          {header:'Utánanéztél, hogy lehte angol kocsival az EU-ba utazni Brexit után?', text:''}
+        ].map(item => {
           counter = counter + 1;
-          return <ChecklistItem index={counter} header={label} text="bfajsirfjsuhfs" />
+          return <ChecklistItem index={counter} header={item.header} text={item.text} />
         })}
       </Accordion>
 
