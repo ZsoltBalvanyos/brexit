@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fcb140d49de9c6c17856c1c8804a9e66",
+    "revision": "f453d9afd7f51b38a170c6b4c9b38a51",
     "url": "/brexit/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brexit/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "9d19b2412cc607f9843e",
+    "revision": "4533a646331387a8f086",
     "url": "/brexit/static/css/main.4dc1afbb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brexit/static/js/2.da184576.chunk.js"
   },
   {
-    "revision": "9d19b2412cc607f9843e",
-    "url": "/brexit/static/js/main.60c077d5.chunk.js"
+    "revision": "4533a646331387a8f086",
+    "url": "/brexit/static/js/main.15750312.chunk.js"
   },
   {
     "revision": "6fa362cdb54224524127",
