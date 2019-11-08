@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/brexit/static/css/main.4dc1afbb.chunk.css",
-    "main.js": "/brexit/static/js/main.15750312.chunk.js",
-    "main.js.map": "/brexit/static/js/main.15750312.chunk.js.map",
+    "main.js": "/brexit/static/js/main.65346879.chunk.js",
+    "main.js.map": "/brexit/static/js/main.65346879.chunk.js.map",
     "runtime-main.js": "/brexit/static/js/runtime-main.7bca68eb.js",
     "runtime-main.js.map": "/brexit/static/js/runtime-main.7bca68eb.js.map",
     "static/css/2.0624914a.chunk.css": "/brexit/static/css/2.0624914a.chunk.css",
     "static/js/2.da184576.chunk.js": "/brexit/static/js/2.da184576.chunk.js",
     "static/js/2.da184576.chunk.js.map": "/brexit/static/js/2.da184576.chunk.js.map",
     "index.html": "/brexit/index.html",
-    "precache-manifest.d263d0fc204fba170f3c32d8902002de.js": "/brexit/precache-manifest.d263d0fc204fba170f3c32d8902002de.js",
+    "precache-manifest.2eef841a78103c28ff915d984970c67b.js": "/brexit/precache-manifest.2eef841a78103c28ff915d984970c67b.js",
     "service-worker.js": "/brexit/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/brexit/static/css/2.0624914a.chunk.css.map",
     "static/css/main.4dc1afbb.chunk.css.map": "/brexit/static/css/main.4dc1afbb.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.0624914a.chunk.css",
     "static/js/2.da184576.chunk.js",
     "static/css/main.4dc1afbb.chunk.css",
-    "static/js/main.15750312.chunk.js"
+    "static/js/main.65346879.chunk.js"
   ]
 }
