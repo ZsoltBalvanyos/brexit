@@ -2,10 +2,12 @@ import React from 'react';
 import { Form, Container, Card, Accordion } from 'react-bootstrap';
 import ChecklistItem from './ChecklistItem.js';
 
-let counter = 0;
-
 const Main = () => (
-  <Container xs={12} sm={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }} className="main-info-container shadow p-3 mb-5 bg-white rounded">
+  <Container
+    xs={12}
+    sm={{ span: 10, offset: 1 }}
+    md={{ span: 8, offset: 2 }}
+    className="main-info-container shadow p-3 mb-5 bg-white rounded">
 
     <h5>
       Az Egyesült Királyságban dolgozol magyar munkavállóként? Ha igen, akkor érdemes a Brexit folyamat alapjait megérteni, és tisztában lenni azzal, hogy mi várható, illetve mit tehetsz, hogy ne érjenek nagy meglepetések a következő hetekben/hónapokban. Mi összegyűjtöttük a legfontosabb tudnivalókat ezen az oldalon.
@@ -49,22 +51,34 @@ const Main = () => (
 
       <Accordion>
         {[
-          {header:'Van érvényes útleveled?', text:'A londoni nagykövettségen tudsz igényelni. Ide kattintva tudsz időpontot foglalni, részletesebb tájékoztatásért kattints ide!'},
-          {header:'Brit állampolgár vagy? Ha nem, jelentkeztél már pre-settled vagy settled statusra?', text:'Jelentkezéshez szükséged lesz egy érvényes e-mail címre, telefonszámra, személyigazolványra vagy útlevélre. A jelentkezést intézheted egyszerűen az ingyenesen letölthető ‘EU Exit: Document Check’  telefonos applikáción keresztül, postai úton illetve egy erre a célra kijelölt regisztrációs intézmények egyikének felkeresésével. A kormány magyar nyelvű tájékoztatásáért kattints ide, a jelentkezés elindításához pedig ide!'},
-          {header:'Van "National Insurance Number"-ed?', text:'National Insurance Number igényléséhez kattints ide!'},
-          {header:'Utánanéztél változik-e az Erasmus ösztöndíjad?', text:<div>Az Európai Unió hivatalos oldalán olvashatsz erről bővebben magyarul.</div>},
-          {header:'Be vagy jelentve a munkahelyeden?', text:''},
-          {header:'Utánanéztél változnak-e a mobilszolgáltatód roamin díjai?', text:'Egyelőre az EE hivatalos álláspontja, hogy nem terveznek változtatni a jelenlegi rendszerükön. Az O2 sem dolgozott ki külön tervet, de elmondásuk szerint a lehető legkedvezőbb megoldást szeretnék kínálni az ügyfeleiknek, részletes információért keresd fel a szolgáltatód ügyfélszolgálatát.'},
-          {header:'Ha vannak, honosítottad a szakmai okleveleidet?',
-            text:<div>A kormányoldalon tudsz ehhez segítséget kérni. Illetve vannak erre szakosodott weboldalak:	<br/><br/>
+          {
+            header:'Van érvényes útleveled?',
+            text:<div>A londoni nagykövettségen tudsz igényelni. <a target="_blank" href="https://ifr.mfa.gov.hu/Idopontfoglalas/Pages/Idopontfoglalas.aspx">Ide kattintva</a> tudsz időpontot foglalni, részletesebb tájékoztatásért <a target="_blank" href="https://london.mfa.gov.hu/page/utlevel-igenylese-nagykoruaknak">kattints ide</a>!</div>
+          },
+          {
+            header:'Brit állampolgár vagy? Ha nem, jelentkeztél már pre-settled vagy settled statusra?',
+            text:<div>Jelentkezéshez szükséged lesz egy érvényes e-mail címre, telefonszámra, személyigazolványra vagy útlevélre. A jelentkezést intézheted egyszerűen az ingyenesen letölthető ‘EU Exit: Document Check’  telefonos applikáción keresztül, postai úton illetve egy erre a célra kijelölt regisztrációs intézmények egyikének felkeresésével. A kormány magyar nyelvű tájékoztatásáért <a target="_blank" href="https://www.gov.uk/guidance/settled-status-for-eu-citizens-and-their-families-translations.hu?fbclid=IwAR1ITI_lx_AKujNtnmCn6RRgjQiSMHqv5wfDjRDoaSXx9xNxQeX-mTw0xig#apply-to-the-euss">kattints ide</a>, a jelentkezés elindításához pedig <a target="_blank" href="https://apply-to-visit-or-stay-in-the-uk.homeoffice.gov.uk/?qitq=e547581c-c6df-4e4e-9980-285cf1e0b16a&qitp=d959fe29-919d-4265-b923-f79c4592f986&qitts=1572705627&qitc=homeoffice&qite=prodoct2019&qitrt=Safetynet&qith=3f34cf0f07d398f8c00bc58b65c60724">ide</a>!</div>
+          },
+          {
+            header:'Van "National Insurance Number"-ed?',
+            text:<div>National Insurance Number igényléséhez <a target="_blank" href="https://www.gov.uk/apply-national-insurance-number">kattints ide</a>!</div>
+          },
+          {
+            header:'Utánanéztél változik-e az Erasmus ösztöndíjad?',
+            text:<div>Az <a target="_blank" href="https://ec.europa.eu/programmes/erasmus-plus/about/brexit_hu">Európai Unió hivatalos oldalán</a> olvashatsz erről bővebben magyarul.</div>
+          },
+          {
+            header:'Utánanéztél változnak-e a mobilszolgáltatód roamin díjai?',
+            text:'Egyelőre az EE hivatalos álláspontja, hogy nem terveznek változtatni a jelenlegi rendszerükön. Az O2 sem dolgozott ki külön tervet, de elmondásuk szerint a lehető legkedvezőbb megoldást szeretnék kínálni az ügyfeleiknek, részletes információért keresd fel a szolgáltatód ügyfélszolgálatát.'
+          },
+          {
+            header:'Ha vannak, honosítottad a szakmai okleveleidet?',
+            text:<div>A kormányoldalon tudsz ehhez <a target="_blank" href="https://www.gov.uk/government/publications/hungary-list-of-translators-and-interpreters"> segítséget kérni</a>. Illetve vannak erre szakosodott weboldalak:	<br/><br/>
             <a target="_blank" href="https://document-translations.co.uk/languages-translations/hungarian-translation-london">https://document-translations.co.uk/languages-translations/hungarian-translation-london</a><br/><br/>
             <a target="_blank" href="https://www.londontranslations.co.uk/hungarian-translation/">https://www.londontranslations.co.uk/hungarian-translation/</a>
-            </div>},
-          {header:'Utánanéztél, hogy lehte angol kocsival az EU-ba utazni Brexit után?', text:''}
-        ].map(item => {
-          counter = counter + 1;
-          return <ChecklistItem index={counter} header={item.header} text={item.text} />
-        })}
+            </div>
+          }
+        ].map((item, index) => <ChecklistItem index={index} header={item.header} text={item.text} />)}
       </Accordion>
 
     <h3>Uniós polgárok letelepedési rendszere</h3>

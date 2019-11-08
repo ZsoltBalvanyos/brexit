@@ -11,7 +11,7 @@ function App() {
 
   const csatlakozzURL = "https://jelentkezes.momentum.hu/";
   const tamogassURL = "https://momentum.hu/momentum-tamogatas/";
-  const mailto = "mailto:brexit@momentum.hu";
+  const mailto = "mailto:anglia@momentum.hu";
 
   return (
     <div>
@@ -38,7 +38,6 @@ function App() {
 
       <Container fluid id="header" >
         <Row width="100%">
-
         </Row>
       </Container>
 
