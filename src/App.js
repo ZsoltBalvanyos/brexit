@@ -36,8 +36,9 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
 
-      <Container fluid id="header" >
+      <Container fluid id="header">
         <Row width="100%">
+          <img src="brexit-heads.png" />
         </Row>
       </Container>
 
